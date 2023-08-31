@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Numeros aleatorios</title>
+
+</head>
+
+<body>
+<div class="sidebar" style="float:right">
+  <a  class="active"><h3>Flavio Gabriel Miranda Velarde</h3></a>
+
+  <a href="cuadradoMedio.html" >Cuadrado medio</a>
+  <a href="productoMedio.html" >Producto medio</a>
+  <a href="index.html" >Congruencial lineal</a>
+  <a href="CongruencialMultiplicativo.html">Congruencial multiplicativo</a>
+
+</div>
+<div  style="float:right">
+
+
+<h2 id="titulo">Metodo Congruencial Multiplicativo</h2>
+<div class="contenedor">
+  <div class="row-est">
+    <div class="caja-gen">
+      <form class="form-est">
+        <div class="row">
+          <label for="semilla">Semilla</label>
+          <input type="number" id="id-semilla" name="semilla">
+        </div><br>
+        <div class="row">
+          <label for="a">k</label>
+          <input type="number" id="id-a" name="a" >
+
+          <label for="gen">Periodo</label>
+          <select id="id-m" name="gen">
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="8">8</option>
+            <option value="16">16</option>
+            <option value="32">32</option>
+            <option value="64">64</option>
+            <option value="128">128</option>
+            <option value="256">256</option>
+            <option value=""512>512</option>
+            <option value="1024">1024</option>
+          </select>
+
+        </div><br>
+        <div class="row">
+
+       <br>
+        <label for="x" >3+8k</label>
+        <input type="radio" name="status" value="0" id="x" checked style="float:left">
+        <label for="y" >5+8k</label>
+        <input type="radio" name="status" value="1" id="y" style="float:left">
+
+        </div><br>
+        <button class="myButton" type="button" onclick="cargarDatos()">Generar</button>
+      </form>
+    </div>
+  </div>
+  <div style="display:inline; width: 540px; text-align: center;">
+    <div  id="t00" class="contenedor">
+
+    </div>
+
+    <table id="t01" style="width: 520px;" >
+
+      <tr>
+        <th id="tf-1" value="0">No.</th>
+        <th>X<sub>n</sub></th>
+        <th>a * Xi<sub>n</sub></th>
+
+        <th>Xi</th>
+        <th>Ri</th>
+      </tr>
+    </table><br>
+  </div>
+</div>
+<script src="js/CongruencialMultiplicativo.js"></script>
+</div>
+</body>
+</html>

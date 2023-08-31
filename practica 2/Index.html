@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Css/estilos.css">
+
+  <title>Numeros aleatorios</title>
+
+
+</head>
+
+<body>
+
+<div class="sidebar" style="float:right">
+  <a  class="active"><h3>Flavio Gabriel Miranda Velarde</h3></a>
+
+  <a href="cuadradoMedio.html">Cuadrado medio</a>
+  <a href="productoMedio.html">Producto medio</a>
+  <a href="index.html" >Congruencial lineal</a>
+  <a href="CongruencialMultiplicativo.html">Congruencial multiplicativo</a>
+
+</div>
+<div  style="float:right">
+
+  <h2 id="titulo">Metodo Congruencial lineal</h2>
+  <br>
+  <br>
+  <br>
+  <div class="contenedor">
+    <div class="row-est">
+      <div class="caja-gen">
+        <form class="form-est">
+          <div class="row">
+            <label for="semilla">Semilla</label>
+            <input type="number" id="id-semilla" name="semilla">
+          </div><br>
+          <div class="row">
+            <label for="a">k</label>
+            <input type="number" id="id-a" name="a" >
+          </div><br>  
+
+          <div class="row">
+            <label for="c">c</label>
+
+            <select type="number" id="id-c" name="c">
+
+              <option value="3">3</option>
+              <option value="5">5</option>
+              <option value="7">7</option>
+              <option value="11">11</option>
+              <option value="13">13</option>
+              <option value="17">19</option>
+              <option value="19">19</option>
+              <option value="23">23</option>
+              <option value="29">29</option>
+              <option value="31">31</option>
+              <option value="37">37</option>
+              <option value="41">41</option>
+              <option value="53">53</option>
+              <option value="59">59</option>
+              <option value="61">61</option>
+              <option value="67">67</option>
+              <option value="71">71</option>
+              <option value="73">73</option>
+              <option value="79">79</option>
+              <option value="83">83</option>
+              <option value="89">89</option>
+              <option value="87">87</option>
+              <option value="101">101</option>
+
+
+
+
+
+            </select>
+
+
+
+            <label for="gen">Periodo</label>
+            <select id="id-m" name="gen">
+              <option value="2">2</option>
+              <option value="4">4</option>
+              <option value="8">8</option>
+              <option value="16">16</option>
+              <option value="32">32</option>
+              <option value="64">64</option>
+              <option value="128">128</option>
+              <option value="256">256</option>
+              <option value="512">512</option>
+              <option value="1024">1024</option>
+            </select>
+          </div><br>  
+       <br>
+          <button class="myButton" type="button" onclick="cargarDatos()">Generar</button>
+        </form>
+      </div>
+    </div>
+    <div style="display:inline; width: 540px; text-align: center;">
+<div  id="t00" class="contenedor">
+
+</div>
+
+      <table id="t01" style="width: 520px;" >
+
+        <tr>
+          <th id="tf-1" value="0">No.</th>
+          <th>X<sub>n</sub></th> 
+          <th>a * Xi<sub>n</sub></th>
+          <th> + c</th>
+          <th>Xi</th>
+          <th>Ri</th>
+        </tr>   
+      </table><br>
+    </div>
+  </div>
+<script src="js/controlador.js"></script>
+</div>
+</body>
+</html>

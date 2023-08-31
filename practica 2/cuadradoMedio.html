@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="Css/estilos.css">
+	<title>Numeros aleatorios</title>
+
+
+</head>
+
+<body>
+<div class="sidebar" style="float:right">
+
+	<a  class="active"><h3>Flavio Gabriel Miranda Velarde</h3></a>
+	<a href="cuadradoMedio.html" >Cuadrado medio</a>
+	<a href="productoMedio.html">Producto medio</a>
+	<a href="index.html">Congruencial lineal</a>
+	<a href="CongruencialMultiplicativo.html">Congruencial multiplicativo</a>
+
+</div>
+<div  style="float:right">
+
+<h2 id="titulo">Metodo Cuadrado medio</h2>
+<div class="contenedor">
+	<div class="row-est">
+		<div class="caja-gen">
+			<form class="form-est">
+				<div >
+					<input type="text" name="semilla" id="semilla" placeholder="Semilla"/>
+
+					<br>
+					<br>
+					<label for="item">Cantidad de numeros aleatorios</label>
+					<input type="number" name="numberite" id="numberite" value="12">
+					<button class="myButton" type="button" id="generar">Generar</button>
+				</div>
+
+
+			</form>
+		</div>
+	</div>
+	<div style="display:inline; width: 540px; text-align: center;">
+
+
+		<div  id="t00" >
+
+		</div>
+		<table border="1" class="table">
+			<thead>
+			<tr>
+				<th>n</th>
+				<th>Rn</th>
+				<th>Yi</th>
+				<th>Xi</th>
+				<th>Ri</th>
+			</tr>
+			</thead>
+			<tbody id="table-elementos">
+
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/cuadradoMedio.js"></script>
+</div>
+</body>
+</html>
+
+
